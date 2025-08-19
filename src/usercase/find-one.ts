@@ -1,8 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { RpcException } from '@nestjs/microservices';
-import { Finance } from "src/model/dto/finance";
-import { FinanceRepository } from "src/repository/finance.repository";
-import { UserRepository } from "src/repository/user.repository";
+import { Finance } from "../model/dto/finance";
+import { FinanceRepository } from "../repository/finance.repository";
+import { UserRepository } from "../repository/user.repository";
 
 @Injectable()
 export class FindOneUsecase {

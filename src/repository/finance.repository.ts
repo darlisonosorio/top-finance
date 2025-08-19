@@ -2,8 +2,8 @@ import { BadRequestException, Injectable } from "@nestjs/common";
 import { RpcException } from "@nestjs/microservices";
 import { Knex } from "knex";
 import { InjectConnection } from "nest-knexjs";
-import { Finance } from "src/model/dto/finance";
-import { FinanceForm } from "src/model/dto/finance-form";
+import { Finance } from "../model/dto/finance";
+import { FinanceForm } from "../model/dto/finance-form";
 
 @Injectable()
 export class FinanceRepository {
@@ -76,9 +76,10 @@ export class FinanceRepository {
           .then((result) => result[0]));
       return result;
     } catch (error) {
+      console.error('finance-error', error);
       throw new RpcException({
         statusCode: 400,
-        message: 'Email already exists or invalid data.',
+        message: 'Invalid data.',
       });
     }
   }

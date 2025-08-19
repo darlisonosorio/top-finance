@@ -58,6 +58,7 @@ $ pnpm run start:prod
 ```
 
 ## Run tests
+Make sure to have infrascture services running before execute tests
 
 ```bash
 # e2e tests

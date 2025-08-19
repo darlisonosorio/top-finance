@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { RpcException } from '@nestjs/microservices';
-import { Finance } from "src/model/dto/finance";
-import { FinanceRepository } from "src/repository/finance.repository";
+import { Finance } from "../model/dto/finance";
+import { FinanceRepository } from "../repository/finance.repository";
 
 @Injectable()
 export class DeleteFinanceUsecase {

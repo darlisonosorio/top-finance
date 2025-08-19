@@ -1,8 +1,7 @@
 import { Inject, Injectable } from "@nestjs/common";
 import { ClientProxy, RpcException } from "@nestjs/microservices";
-import { InjectConnection } from "nest-knexjs";
 import { lastValueFrom } from "rxjs";
-import { User } from "src/model/dto/user";
+import { User } from "../model/dto/user";
 
 @Injectable()
 export class UserRepository {

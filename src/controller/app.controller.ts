@@ -2,11 +2,11 @@ import { Controller, Get } from '@nestjs/common';
 import { MessagePattern, Payload } from "@nestjs/microservices";
 import { of } from "rxjs";
 import { delay } from "rxjs/operators";
-import { FinanceForm } from 'src/model/dto/finance-form';
-import { DeleteFinanceUsecase } from 'src/usercase/delete-finance';
-import { FindAllUsecase } from 'src/usercase/find-all';
-import { FindOneUsecase } from 'src/usercase/find-one';
-import { PersistFinanceUsecase } from 'src/usercase/persist-finance';
+import { FinanceForm } from '../model/dto/finance-form';
+import { DeleteFinanceUsecase } from '../usercase/delete-finance';
+import { FindAllUsecase } from '../usercase/find-all';
+import { FindOneUsecase } from '../usercase/find-one';
+import { PersistFinanceUsecase } from '../usercase/persist-finance';
 
 @Controller()
 export class AppController {

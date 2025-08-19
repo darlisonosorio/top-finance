@@ -1,9 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { RpcException } from '@nestjs/microservices';
-import { FinanceForm } from "src/model/dto/finance-form";
-import { FinanceRepository } from "src/repository/finance.repository";
 import { validateOrReject } from 'class-validator';
 import { plainToInstance } from 'class-transformer';
+import { FinanceForm } from "../model/dto/finance-form";
+import { FinanceRepository } from "../repository/finance.repository";
 
 @Injectable()
 export class PersistFinanceUsecase {

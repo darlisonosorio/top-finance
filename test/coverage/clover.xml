@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1755626358044" clover="3.2.0">
+  <project timestamp="1755626358044" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="10" coveredconditionals="9" methods="0" coveredmethods="0" elements="12" coveredelements="11" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+    <file name="knexfile.ts" path="F:\teste\top-finance\test\knexfile.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="10" coveredconditionals="9" methods="0" coveredmethods="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

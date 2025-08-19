@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { ListFinanceResult } from "src/model/dto/list-finance";
-import { FinanceRepository } from "src/repository/finance.repository";
+import { ListFinanceResult } from "../model/dto/list-finance";
+import { FinanceRepository } from "../repository/finance.repository";
 
 @Injectable()
 export class FindAllUsecase {
